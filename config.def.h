@@ -39,6 +39,8 @@ static const char unknown_str[] = "n/a";
  *                                                     see keyboard_indicators.c
  * keymap              layout (variant) of current     NULL
  *                     keymap
+ * keymap_uppercase    layout (variant) of current     NULL
+ *                     keymap, uppercased
  * load_avg            load average                    NULL
  * netspeed_rx         receive network speed           interface name (wlan0)
  * netspeed_tx         transfer network speed          interface name (wlan0)
@@ -61,8 +63,10 @@ static const char unknown_str[] = "n/a";
  * uid                 UID of current user             NULL
  * uptime              system uptime                   NULL
  * username            username of current user        NULL
- * vol_perc            OSS/ALSA volume in percent      mixer file (/dev/mixer)
- *                                                     NULL on OpenBSD/FreeBSD
+ * vol_perc            PulseAudio/PipeWire volume in   sink ID (@DEFAULT_SINK@, 1, etc)
+ *                     percent (can be > 100)
+ * vol_mute            Audio sink mute status          sink ID (@DEFAULT_SINK@, 1, etc)
+ *                     as MUT or VOL
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */

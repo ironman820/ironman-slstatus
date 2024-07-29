@@ -40,8 +40,9 @@ const char *kernel_release(const char *unused);
 /* keyboard_indicators */
 const char *keyboard_indicators(const char *fmt);
 
-/* keymap */
+/* keymap (original case and uppercase options)*/
 const char *keymap(const char *unused);
+const char *keymap_uppercase(const char *unused);
 
 /* load_avg */
 const char *load_avg(const char *unused);
@@ -81,6 +82,7 @@ const char *username(const char *unused);
 
 /* volume */
 const char *vol_perc(const char *card);
+const char *vol_mute(const char *card);
 
 /* wifi */
 const char *wifi_essid(const char *interface);
