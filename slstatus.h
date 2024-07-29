@@ -5,6 +5,7 @@ const char *backlight_perc(const char *);
 
 /* battery */
 const char *battery_perc(const char *);
+void battery_notify(const char *);
 const char *battery_remaining(const char *);
 const char *battery_state(const char *);
 
